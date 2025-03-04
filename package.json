@@ -1,0 +1,24 @@
+{
+  "name": "react-mapbox-adventure",
+  "version": "1.0.0",
+  "main": "index.jsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": true,
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@turf/turf": "^7.2.0",
+    "bootstrap": "^5.3.3",
+    "js-yaml": "^4.1.0",
+    "mapbox-gl": "^3.10.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "vite": "^6.1.1"
+  }
+}

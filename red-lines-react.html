@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React Mapbox Lines</title>
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="https://unpkg.com/react-map-gl@7.1.12/dist/umd/react-map-gl.min.js"></script>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background-color: #f0f0f0; }
+    #root { max-width: 800px; margin: 20px auto; padding: 20px; background: white; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+    .map-container { margin-bottom: 30px; }
+    .map-title { font-size: 20px; font-weight: bold; margin-bottom: 10px; }
+    .map-description { font-size: 14px; margin-bottom: 10px; color: #555; }
+    .map { width: 100%; height: 300px; border-radius: 10px; }
+  </style>
+</head>
+<body>
+
+<div id="root"></div>
+
+<script type="text/babel">
+  import {createRoot} from "react-dom/client";
+
+  createRoot(document.getElementById('root')).render(<App />);
+</script>
+
+</body>
+</html>
