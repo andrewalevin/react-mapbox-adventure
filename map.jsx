@@ -31,13 +31,13 @@ const config = {
         },
         town: {
             zoomMin: 6,
-            zoomMinRadius: 15,
-            zoomMax: 13,
-            zoomMaxRadius: 50
+            zoomMinRadius: 20,
+            zoomMax: 11,
+            zoomMaxRadius: 60
         },
         landmark: {
-            zoomMin: 6,
-            zoomMinRadius: 8,
+            zoomMin: 7,
+            zoomMinRadius: 4,
             zoomMax: 9,
             zoomMaxRadius: 20
         }
@@ -163,6 +163,8 @@ const MapComponent = () => {
                     if (spot?.img) {
                         const markerImgPath = `${config.imageRoot}${spot.img.replace(".jpg", "-120px.jpg")}`;
                         const popupImgPath = `${config.imageRoot}${spot.img.replace(".jpg", "-420px.jpg")}`;
+
+                        console.log('popupImgPath: ', popupImgPath);
 
                         markerSpotElem.style.backgroundImage = `url('${markerImgPath}\')`;
 
