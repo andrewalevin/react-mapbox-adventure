@@ -38,8 +38,8 @@ const config = {
         landmark: {
             zoomMin: 7,
             zoomMinRadius: 4,
-            zoomMax: 9,
-            zoomMaxRadius: 20
+            zoomMax: 13,
+            zoomMaxRadius: 25
         }
     }
 };
@@ -235,6 +235,8 @@ const MapComponent = () => {
                     }, 1000);
                 }
             }
+
+
         });
 
     }, []);
